@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  color: #111;
+  background: rgb(231, 231, 231);
+  background-image: url(svgs/background.svg);
+}
+
+#container {
+  max-width: 960px;
+  background: #fff;
+  margin: 0 auto;
+  height: 100%; /* new line */
+}
+
+p {
+  max-width: 350px;
+  margin: 35px auto 0;
+  line-height: 2em;
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+  color: #39add1;
+  font-weight: 700;
+}
+
+a:hover {
+  color: rgb(240, 87, 113);
+}
+
+header {
+  padding-top: 10px;
+}
+
+header nav {
+  padding-bottom: 50px;
+  text-align: left;
+}
+
+ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+main {
+  padding-top: 50px;
+}
+
+main h2 {
+  font-size: 28px;
+}
+
+footer {
+  width: 100%;
+  margin-top: 100px;
+  padding-bottom: 30px;
+  color: #ba8058;
+}
+
+.caption {
+  color: #ba8058;
+  text-align: left;
+  padding-left: 25%; 
+}
+
+/* ==========================================================
+ * SVG Styles
+ * ========================================================== 
+ */
+
+a:hover .nav-heart,
+a:hover .nav-location,
+a:hover .nav-contact {
+  fill: rgb(240, 87, 113);
+}
+
+.st1 {
+  opacity: 0;
+}
+
+.corgi-sable {
+  color: #bb8846;
+}
+
+.corgi-fawn {
+  color: #f1b57c;
+}
+
+.corgi-red {
+  color: #774402;
+}
+
+.corgi-stone {
+  color: #52595f;
+}
+
+/* ==========================================================
+ * SVG Styles
+ * ========================================================== 
+ */
+
+#layer-1,
+.nav-layer,
+.corbi-layer {
+  transition: transform .4s cubic-bezier(.74,-2.63,.36,4.84);
+}
+
+#layer-1:hover {
+  transform: scale(1.1) rotate(-5deg);
+}
+
+#layer-1:hover .st0 {
+  fill: #F4C6A6;
+}
+
+#layer-1:hover .st1 {
+  fill: rgb(233, 97, 0);
+}
+
+#layer-1:hover .st2 {
+  fill: #BA8058;
+}
+
+.nav-layer:hover {
+  transform: scale(1.2);
+}
+
+.corbi-layer:hover {
+  transform: rotate(-25deg);
+}
+
+/* ==========================================================
+ * Media Queries
+ * ========================================================== 
+ */
+
+ @media (min-width: 425px) {
+
+  .logo-text {
+    display: none;
+  }
+
+  .st1 {
+    opacity: 1;
+  }
+ }
