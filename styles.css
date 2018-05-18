@@ -151,7 +151,47 @@ a:hover .nav-contact {
  */
 
 .st2 {
+  transform-origin: 45% 60%;
+}
+
+#layer-1,
+.nav-layer,
+.corbi-layer {
+  transition: transform .4s cubic-bezier(.74,-2.63,.36,4.84);
+}
+
+#layer-1:hover {
+  transform: scale(1.1) rotate(-5deg);
+}
+
+#layer-1:hover .st0 {
+  fill: #F4C6A6;
+}
+
+#layer-1:hover .st1 {
+  fill: rgb(233, 97, 0);
+}
+
+#layer-1:hover .st2 {
+  fill: #BA8058;
+}
+
+.nav-layer:hover {
+  transform: scale(1.2);
+}
+
+.corbi-layer:hover {
+  transform: rotate(-25deg);
+}
+
+.st0 {
+  transform: translate3d(0, -160px, 0);
+  animation: slide .5s 0s forwards;
+}
+
+.st2 {
   opacity: 0;
+  animation: appear-grow-paw .6s .7s ease-out forwards;
 }
 
 @media (min-width: 425px) {
@@ -211,49 +251,11 @@ a:hover .nav-contact {
     animation-delay: 1.5s;
   }
 
-}
-
-.st2 {
-  transform-origin: 45% 60%;
-}
-
-#layer-1,
-.nav-layer,
-.corbi-layer {
-  transition: transform .4s cubic-bezier(.74,-2.63,.36,4.84);
-}
-
-#layer-1:hover {
-  transform: scale(1.1) rotate(-5deg);
-}
-
-#layer-1:hover .st0 {
-  fill: #F4C6A6;
-}
-
-#layer-1:hover .st1 {
-  fill: rgb(233, 97, 0);
-}
-
-#layer-1:hover .st2 {
-  fill: #BA8058;
-}
-
-.nav-layer:hover {
-  transform: scale(1.2);
-}
-
-.corbi-layer:hover {
-  transform: rotate(-25deg);
-}
-
-.st0 {
-  transform: translate3d(0, -200px, 0);
-  animation: slide .5s 0s forwards;
-}
-
-.st2 {
-  animation: appear-grow-paw .6s 2.5s ease-out forwards;
+  .st2 {
+    opacity: 0;
+    animation: appear-grow-paw .6s 2.2s ease-out forwards;
+  }
+  
 }
 
 /* ==========================================================
@@ -267,7 +269,4 @@ a:hover .nav-contact {
     display: none;
   }
 
-  .st1 {
-    opacity: 1;
-  }
  }
